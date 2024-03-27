@@ -18,7 +18,7 @@ function setUserName()
 	else
 	{
 		localStorage.setItem("name", myName);
-		myHeading.innerHTML = `BECOME A HELLDIVER + ${myName}!`;
+		myHeading.innerHTML = `BECOME A HELLDIVER ${myName}!`;
 	}
 }
 
@@ -31,7 +31,7 @@ if (!localStorage.getItem("name"))
 else
 {
 	let storedName = localStorage.getItem("name");
-	myHeading.innerHTML = `BECOME A HELLDIVER + ${storedName}!`;
+	myHeading.innerHTML = `BECOME A HELLDIVER ${storedName}!`;
 }
 
 
